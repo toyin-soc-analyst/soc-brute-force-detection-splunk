@@ -28,3 +28,6 @@ This project demonstrates my ability to perform log analysis, detect threats, an
 - Threat Detection
 - Incident Investigation
 - Security Monitoring
+## Screenshot
+
+![Phishing Analysis](phishing-analysis.png)
