@@ -1,33 +1,36 @@
 
 soc-brute-force-detection-splunk
+# 🚨 SOC Incident Response: Brute Force Attack Detection Using Splunk
 
-## Overview
-This project demonstrates my ability to analyze security logs and identify suspicious activity using Splunk in a SOC (Security Operations Center) environment.
+## 📌 Scenario
+A company’s security team noticed multiple failed login attempts on a user account. As a SOC Analyst, I was tasked with investigating potential brute-force attack activity using Splunk.
 
-## Tools Used
-- Splunk
-- Windows Logs
+---
+
+## 🎯 Objective
+- Detect suspicious login behavior  
+- Analyze authentication logs  
+- Identify attack patterns  
+- Recommend mitigation strategies  
+
+---
+
+## 🛠️ Tools Used
+- Splunk (SIEM)
+- Windows Event Logs
 - MITRE ATT&CK Framework
 
-## Scenario
-In this lab, I analyzed log data to detect suspicious login behavior and potential brute-force attacks.
+---
 
-## Analysis
-I filtered login events and examined user activity patterns. I identified repeated failed login attempts from a single IP address, indicating possible unauthorized access attempts.
+## 🔍 Investigation Steps
 
-## Findings
-- Multiple failed login attempts
-- Suspicious authentication patterns
-- Indicators of brute-force attack
+### 1. Log Collection
+Collected Windows Event Logs and ingested them into Splunk.
 
-## Conclusion
-This project demonstrates my ability to perform log analysis, detect threats, and document findings in a SOC workflow environment.
+### 2. Search Query
+Used Splunk to identify multiple failed login attempts:
 
-## Skills Demonstrated
-- Log Analysis
-- Threat Detection
-- Incident Investigation
-- Security Monitoring
-## Screenshot
-
-![Phishing Analysis](phishing-analysis.png)
+```spl
+index=wineventlog EventCode=4625
+| stats count by Account_Name, Source_Network_Address
+| sort - count
