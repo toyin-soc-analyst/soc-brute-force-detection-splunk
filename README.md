@@ -1,6 +1,5 @@
 
-soc-brute-force-detection-splunk
-# 🚨 SOC Incident Response: Brute Force Attack Detection Using Splunk
+
 
 ## 📌 Scenario
 A company’s security team noticed multiple failed login attempts on a user account. As a SOC Analyst, I was tasked with investigating potential brute-force attack activity using Splunk.
