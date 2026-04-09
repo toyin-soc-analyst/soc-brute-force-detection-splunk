@@ -1,5 +1,5 @@
 
-# Splunk Threat Detection Lab
+soc-brute-force-detection-splunk
 
 ## Overview
 This project demonstrates my ability to analyze security logs and identify suspicious activity using Splunk in a SOC (Security Operations Center) environment.
