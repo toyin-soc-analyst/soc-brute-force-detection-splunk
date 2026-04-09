@@ -34,3 +34,31 @@ Used Splunk to identify multiple failed login attempts:
 index=wineventlog EventCode=4625
 | stats count by Account_Name, Source_Network_Address
 | sort - count
+3. Detection
+
+Identified repeated failed login attempts from a single IP address targeting multiple accounts.
+
+4. Analysis
+High volume of failed logins within short time frame
+Same IP attempting access across accounts
+Pattern consistent with brute-force attack
+🚨 Findings
+Suspicious IP: 192.168.1.100
+Attack Type: Brute Force Attempt
+Target: Multiple user accounts
+Risk Level: High
+🛡️ Recommendations
+Block the malicious IP address
+Enable Multi-Factor Authentication (MFA)
+Implement account lockout policies
+Monitor login attempts continuously
+📸 Evidence
+
+(Add your Splunk screenshots here)
+
+📚 Skills Demonstrated
+SIEM Log Analysis
+Threat Detection
+Incident Investigation
+Security Monitoring
+MITRE ATT&CK Mapping
