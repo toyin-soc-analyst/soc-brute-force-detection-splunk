@@ -1,7 +1,5 @@
 
-## 📸 Evidence
 
-![Splunk Logs](phishing-analysis.png)
 
 ## 📌 Scenario
 A company’s security team noticed multiple failed login attempts on a user account. As a SOC Analyst, I was tasked with investigating potential brute-force attack activity using Splunk.
@@ -63,3 +61,11 @@ Threat Detection
 Incident Investigation
 Security Monitoring
 MITRE ATT&CK Mapping
+## 🚨 Findings
+
+- Attack Type: Credential Harvesting  
+- Malicious Domain: bit.ly/secure-login  
+- Spoofed Email: noreply@microsoft.com  
+- Technique: Social Engineering  
+- Risk Level: High
+
