@@ -1,5 +1,7 @@
 
+## 📸 Evidence
 
+![Splunk Logs](phishing-analysis.png)
 
 ## 📌 Scenario
 A company’s security team noticed multiple failed login attempts on a user account. As a SOC Analyst, I was tasked with investigating potential brute-force attack activity using Splunk.
